@@ -4,6 +4,9 @@ import Review from "./review"
 import Form from './reviewForm'
 
 export default class Movie extends Component {
+    constructor (props){
+        super(props);
+    }
     render() {
         //comment objects for props usage
         let commentOne ={
