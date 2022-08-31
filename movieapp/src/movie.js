@@ -1,7 +1,7 @@
 import { Component } from "react"
 import './App.css'
-import './reviewList'
 import ReviewList from "./reviewList"
+import './reviewForm'
 
 export default class Movie extends Component {
     render() {
@@ -12,6 +12,7 @@ export default class Movie extends Component {
                 </div>
                 <div id="reviewList" className="row">
                     <ReviewList/>
+                    <reviewForm/>
                 </div>
 
             </div>
