@@ -5,7 +5,7 @@ import Form from './reviewForm'
 
 export default class Movie extends Component {
     render() {
-
+        //comment objects for props usage
         let commentOne ={
             name: "Max",
             content: "Great family cult classic"
@@ -23,8 +23,10 @@ export default class Movie extends Component {
         return (
             <div id="movie-list" class="container">
                 <br></br>
+                {/* header */}
                 <h1>Movie Reviews</h1> <br></br>
                 <div className="row">
+                    {/* Movie Cards with like and dislike voting buttons. Should see votes on buttons */}
                     <div className="card col-sm-3 mx-auto">
                         <img className="card-img-top img-responsive" width="300 px" height="300 px" src="https://lumiere-a.akamaihd.net/v1/images/p_hocuspocus_19880_e000b013.jpeg" alt="Hocus Pocus"></img>
                         <div className="card-body">
@@ -34,6 +36,7 @@ export default class Movie extends Component {
                             <button className="btn btn-secondary" type="button">Dislike</button>
                         </div>
                         <div id="reviewList" className="row">
+                            {/* Review and Review form attached to each movie */}
                             <Review {...commentOne}/>
                             <Form/>
                         </div>
