@@ -1,12 +1,12 @@
 import { Component } from "react"
 import './App.css'
-import ReviewList from "./reviewList"
-import './reviewForm'
+import Review from "./review.js"
+import './reviewForm.js'
 
 export default class Movie extends Component {
     render() {
         return (
-            <div id="movies">
+            <div id="movie-list" class="container">
                 <div className="card">
                     <img class="card-img-top" src="..." alt="Card cap"></img>
                     <div className="card-body">
@@ -15,7 +15,7 @@ export default class Movie extends Component {
                     </div>
                 </div>
                 <div id="reviewList" className="row">
-                    <ReviewList/>
+                    <Review/>
                     <reviewForm/>
                 </div>
             </div>
