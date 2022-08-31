@@ -1,6 +1,7 @@
 
 h1 {
   text-align: center;
+  color: antiquewhite;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -10,4 +11,8 @@ h1 {
 
 .card{
   background-color: darkgray;
+}
+
+body {
+  background-color: black;
 }
