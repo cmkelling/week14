@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import './App.css'
-import './movie.js'
+import Movie from './movie.js'
 
 export default class MovieList extends Component {
     render () {
