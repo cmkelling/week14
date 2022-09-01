@@ -1,7 +1,8 @@
 import { Component } from "react"
 import './App.css'
+import Rating from './rating'
 import Review from "./review"
-import Form from './reviewForm'
+import ReviewForm from './reviewForm'
 
 export default class Movie extends Component {
     constructor (props){
@@ -24,7 +25,7 @@ export default class Movie extends Component {
             content: "A bit too unbelievable for my taste."
         }
         return (
-            <div id="movie-list" class="container">
+            <div id="movie-list" className="container">
                 <br></br>
                 {/* header */}
                 <h1>Movie Reviews</h1> <br></br>
@@ -40,8 +41,9 @@ export default class Movie extends Component {
                         </div>
                         <div id="reviewList" className="row">
                             {/* Review and Review form attached to each movie */}
+                            <Rating/>
                             <Review {...commentOne}/>
-                            <Form/>
+                            <ReviewForm/>
                         </div>
                     </div>
                     
@@ -55,8 +57,9 @@ export default class Movie extends Component {
                             <button className="btn btn-secondary" type="button">Dislike</button>
                         </div>
                         <div id="reviewList" className="row">
+                            <Rating/>
                             <Review {...commentTwo}/>
-                            <Form/>
+                            <ReviewForm/>
                         </div>
                     </div>
                     
@@ -69,8 +72,9 @@ export default class Movie extends Component {
                             <button className="btn btn-secondary" type="button">Dislike</button>
                         </div>
                         <div id="reviewList" className="row">
+                            <Rating/>
                             <Review {...commentThree}/>
-                            <Form/>
+                            <ReviewForm/>
                         </div>
                     </div>
                     
